@@ -11,7 +11,6 @@ def main():
             monkey.inspect()
 
     a1, a2 = sorted(monkeys, key = attrgetter('num_inspections'), reverse = True)[:2]
-    print(a1.items)
     print(a1.num_inspections * a2.num_inspections)
 
 
