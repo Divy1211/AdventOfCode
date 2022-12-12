@@ -24,7 +24,7 @@ class Monkey:
 
     def inspect(self):
         self.num_inspections += len(self.items)
-        new_lvls = self.op(self.items)
+        new_lvls = self.op(self.items) % 9699690
         if Monkey.relief:
             new_lvls //= 3
         test = self.test(new_lvls)
